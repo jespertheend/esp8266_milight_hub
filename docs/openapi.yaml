@@ -881,6 +881,10 @@ components:
           type: integer
           description: Controls how many cycles are spent listening for packets.  Set to 0 to disable passive listening.
           default: 3
+        max_queued_packets:
+          type: integer
+          description: Controls the maximum length of the packet Queue.
+          default: 20
         state_flush_interval:
           type: integer
           description: Controls how many miliseconds must pass between states being flushed to persistent storage.  Set to 0 to disable throttling.

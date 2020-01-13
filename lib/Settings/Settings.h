@@ -98,6 +98,7 @@ public:
     packetRepeats(50),
     httpRepeatFactor(1),
     listenRepeats(3),
+    maxQueuedPackets(20),
     discoveryPort(48899),
     simpleMqttClientStatus(false),
     stateFlushInterval(10000),
@@ -157,6 +158,7 @@ public:
   size_t packetRepeats;
   size_t httpRepeatFactor;
   uint8_t listenRepeats;
+  uint8_t maxQueuedPackets;
   uint16_t discoveryPort;
   String _mqttServer;
   String mqttUsername;

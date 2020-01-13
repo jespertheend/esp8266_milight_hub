@@ -261,6 +261,14 @@ var UI_FIELDS = [ {
     type: "string",
     tab: "tab-wifi"
   }, {
+    tag:   "max_queued_packets",
+    friendly: "Max Queued Packets",
+    help: "You can increase this if you are running into problems with lost " +
+    "packets when sending a lot of packets at once. Keep in mind that you might " +
+    "reach the memory limit of the device when setting this value too high. Default is 20.",
+    type: "string",
+    tab: "tab-wifi"
+  }, {
     tag:   "state_flush_interval",
     friendly: "State flush interval",
     help: "Minimum number of milliseconds between flushing state to flash. " +
